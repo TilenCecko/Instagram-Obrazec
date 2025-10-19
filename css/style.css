@@ -17,14 +17,10 @@
 body {
     background-color: black;
     font-family: "MojaPisava", sans-serif;
-    display: flex;
-    justify-content: center; /* vodoravno */
-    align-items: center;
-    height: 100vh; 
 }
 
 .glavni {
-    margin: auto;
+    margin: 200px auto;
     width: 935px;
 }
 
@@ -132,7 +128,7 @@ hr {
 .report, .report2{
     display: block;
     margin-top: 20px;
-    width: 100%;
+    width: 274px;
     font-size: 12px;
     line-height: 1.5;
     color: #A8A8A8;
@@ -140,6 +136,7 @@ hr {
 }
 .report2{
     display: block;
+    width: 260px;
     margin-top: 20px;
 }
 .report a, .report2 a{
@@ -163,6 +160,7 @@ hr {
 
 /* --- SIGN UP (drugi html) --- */
 .container{
+    margin: 100px auto;
     height: 590px;
     width: 274px;
     border: 1px solid #1b1b1b;
@@ -179,7 +177,9 @@ hr {
     font-size: 16px;
 }
 .loginfacebook{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #4a5df9;
     width: 270px;
     text-align: center;
