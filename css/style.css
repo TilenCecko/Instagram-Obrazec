@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -20,30 +21,25 @@ body {
 }
 
 .glavni {
-    margin: 200px auto;
-    width: 935px;
+    display: flex;
+    justify-content: center;    
+    gap: 10px;
+    margin: 150px auto;
+    max-width: 935px;
+    padding: 20px;
 }
-
-.levi {
-    float: left;
-}
-
-.desni {
-    float: right;
-    width: 274px;
-}
-
 #instagramText {
     display: block;
     margin: auto;
+    width: 180px;
 }
 
 .odmik {
     margin-top: 5px;
 }
 
-.vpisnaPolja {
-    width: 266px;
+.vpisnaPolja, .resetemail {
+    width: 100%;
     height: 32px;
     background-color: #121212;
     border: 1px solid #4f4f4f;
@@ -53,16 +49,16 @@ body {
 }
 
 input::placeholder {
-    color: #6c6d6d;
+    color: #9e9e9e;
 }
 
 .gumb {
     display: block;
-    margin: 8px auto;
+    margin: 10px auto;
     background-color: #3441af;
     border: none;
     border-radius: 10px;
-    width: 273px;
+    width: 100%;
     height: 30px;
     color: #a3a4b2;
     font-weight: bold;
@@ -78,7 +74,7 @@ input::placeholder {
 }
 
 .or span {
-    color: #999796;
+    color: #9e9e9e;
     width: 60px;
     text-align: center;
 }
@@ -131,7 +127,7 @@ hr {
     width: 274px;
     font-size: 12px;
     line-height: 1.5;
-    color: #A8A8A8;
+    color: #9e9e9e;
     text-align: center;
 }
 .report2{
@@ -143,6 +139,9 @@ hr {
     color: #708DFF;
     text-decoration: none;
     margin-left: 2px;
+}
+.report a:hover{
+    text-decoration: underline;
 }
 /* --- SIGN UP --- */
 .signup{
@@ -160,14 +159,17 @@ hr {
 
 /* --- SIGN UP (drugi html) --- */
 .container{
-    margin: 100px auto;
-    height: 590px;
-    width: 274px;
-    border: 1px solid #1b1b1b;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px auto;
+    height: 620px;
+    max-width: 310px;
 }
 .zgornji{
-    width: 274px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #1b1b1b;
 }
 .zgornji h4{
     text-align: center;
@@ -181,7 +183,7 @@ hr {
     align-items: center;
     justify-content: center;
     background-color: #4a5df9;
-    width: 270px;
+    width: 100%;
     text-align: center;
     border: 2px solid #4a5df9;
     border-radius: 10px;
@@ -193,10 +195,8 @@ hr {
     margin-top: 40px;
 }
 .spodnji{
-    width: 314px;
+    width: 100%;
     height: 60px;
-    margin-top: 40px;
-    margin-left: -30px;
     border: 1px solid #1b1b1b;
     text-align: center;
     display: flex;
@@ -213,4 +213,86 @@ hr {
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
+}
+
+/* --- RESETPASSWORD (drugi html) --- */
+.container2{
+    margin: 100px auto;
+    height: 660px;
+    max-width: 340px;
+    border: 1px solid #1b1b1b;
+    padding: 30px;
+}
+.slika{
+    height: 96px;
+    width: 96px;
+    display: block;
+    margin: auto;
+}
+.reset{
+
+}
+
+.reset span{
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.reset .ajksgdaksjd{
+    font-weight: normal;
+    font-size: 14px;
+    color: #A8A8A8;
+}
+.resetemail{
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .glavni {
+    align-items: center;
+    margin: 80px auto;
+  }
+
+  .levi img {
+    display: none;
+  }
+
+  .desni {
+    width: 70%;
+    padding: 30px 20px;
+  }
+
+  #instagramText {
+    width: 150px;
+  }
+
+  .vpisnaPolja, .gumb {
+    width: 100%;
+  }
+  .report{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  .glavni {
+    margin: 40px auto;
+    padding: 10px;
+  }
+
+  .desni {
+    padding: 20px;
+  }
+}
+/* JAVA SCRIPT */
+.gumb.active{
+    background-color: #4a5df9;
+    color: white;
 }
