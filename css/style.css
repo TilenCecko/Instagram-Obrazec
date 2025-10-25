@@ -334,28 +334,55 @@ hr {
 }
 
 @media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* --- LOGIN STRAN --- */
   .login-glavni {
-    flex-direction: column;        /* razporedimo elemente en pod drugim */
-    align-items: center;           /* poravnava na sredino */
+    flex-direction: column;        
+    align-items: center;           
     margin: 40px auto;
     width: 100%;
-    padding: 0 20px;               /* malo notranjega odmika */
+    padding: 0 20px;
   }
 
   .login-desni {
-    width: 100%;                   /* naj bo čez cel ekran */
-    max-width: 350px;              /* da ne gre preveč na široko */
+    width: 100%;                   
+    max-width: 350px;              
     padding: 20px;
   }
 
   .vpisnaPolja, .gumb {
-    width: 100%;                   /* gumbi in inputi naj bodo široki */
+    width: 100%;
   }
 
   input, .gumb {
-    font-size: 16px;               /* prepreči zoom na iOS */
+    font-size: 16px; /* prepreči zoom na iOS */
+  }
+
+  /* --- RESET PASSWORD STRAN --- */
+  .container-reset {
+    width: 100%;
+    max-width: 350px;   /* primerna širina za telefon */
+    border: none;       /* odstrani obrobo na telefonu */
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .reset-zgornji {
+    padding: 0;
+  }
+
+  .resetemail, .back {
+    width: 100%;
+  }
+
+  .reset-password span {
+    font-size: 13px;
   }
 }
+
 
 
 
