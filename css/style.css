@@ -371,7 +371,7 @@ hr {
   }
 
   .reset-zgornji {
-    padding: 0;
+    padding: 0px;
   }
 
   .resetemail, .back {
@@ -382,10 +382,6 @@ hr {
     font-size: 13px;
   }
 }
-
-
-
-
 
 /* JAVA SCRIPT */
 .gumb.active{
