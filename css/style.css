@@ -334,21 +334,26 @@ hr {
 }
 
 @media (max-width: 500px) {
-  body {
-    font-size: 12px;
-  }
-
   .login-glavni {
+    flex-direction: column;        /* razporedimo elemente en pod drugim */
+    align-items: center;           /* poravnava na sredino */
     margin: 40px auto;
-    padding: 0 20px;
+    width: 100%;
+    padding: 0 20px;               /* malo notranjega odmika */
   }
 
   .login-desni {
+    width: 100%;                   /* naj bo čez cel ekran */
+    max-width: 350px;              /* da ne gre preveč na široko */
     padding: 20px;
   }
 
+  .vpisnaPolja, .gumb {
+    width: 100%;                   /* gumbi in inputi naj bodo široki */
+  }
+
   input, .gumb {
-    font-size: 16px; /* prepreči zoom ob vnosu na iOS */
+    font-size: 16px;               /* prepreči zoom na iOS */
   }
 }
 
