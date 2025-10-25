@@ -7,13 +7,9 @@
 
 @font-face {
     font-family: 'MojaPisava';
-    /* ime, ki ga boš uporabil */
     src: url('../fonts/proximanova_regular.ttf') format('truetype');
-    /* lahko imaš več formatov */
     font-weight: normal;
     font-style: normal;
-    color: white;
-    font-size: 14px;
 }
 
 body {
@@ -344,14 +340,21 @@ hr {
 
   .login-glavni {
     margin: 40px auto;
-    width: 600px;
-
+    padding: 0 20px;
   }
 
   .login-desni {
     padding: 20px;
   }
+
+  input, .gumb {
+    font-size: 16px; /* prepreči zoom ob vnosu na iOS */
+  }
 }
+
+
+
+
 /* JAVA SCRIPT */
 .gumb.active{
     background-color: #4a5df9;
